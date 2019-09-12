@@ -47,7 +47,10 @@ while running:
         dots.append((point[0], point[1]))
     
     pygame.draw.circle(screen, (198,198,198), (250,250), 200, 1)
+    
     pygame.draw.line(screen, (0,0,255), (250,250), (point[0], point[1]), 1)
+    pygame.draw.line(screen, (255,0,0), (250,250), (point[0], 250), 1)
+    pygame.draw.line(screen, (255,0,0), (point[0], 250), (point[0], point[1]), 1)
 
     i = 0
     while i < len(dots):
